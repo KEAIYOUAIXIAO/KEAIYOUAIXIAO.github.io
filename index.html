@@ -2,12 +2,6 @@
 layout: default
 ---
 <h1 class="headline">{{site.title}}</h1>
-<div class="article-list">
-  {% for post in paginator.posts %}
-    <h2><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
-    <p>{{post.excerpt | strip_html}}</p>
-  {% endfor %}
-</div>
 
 <h1 align="center">距离2025年新年还有</h1>
   <div id="countdown" align="center"></div>
@@ -37,6 +31,15 @@ layout: default
     // 启动倒计时
     updateCountdown();
   </script>
+
+<div class="article-list">
+  {% for post in paginator.posts %}
+    <h2><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
+    <p>{{post.excerpt | strip_html}}</p>
+  {% endfor %}
+</div>
+
+
 
 <!-- pagination -->
 {% if paginator.total_pages > 1 %}
