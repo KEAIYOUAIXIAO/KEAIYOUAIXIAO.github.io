@@ -13,13 +13,6 @@ paginate_path: /page:num/
 
 
 
-# Tracker
-analytics: UA-83979019-4
-
-# Comments
-disqus-shortname: webjeda-demo
-
-
 #optimization
 #compress.html
 compress_html:
